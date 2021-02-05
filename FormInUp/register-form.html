@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/FormReg.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+    <div class="main">
+        <form class="form">
+            <div class="action">
+                <div class="dws-input">
+                    <input type="text" name="name" maxlength="15" placeholder="Your Name*" required>
+                </div>
+                <div class="dws-input">
+                    <input type="text" name="surname" maxlength="15" placeholder="Your Surname*"required>
+                </div>
+                <div class="dws-input">
+                    <input type="email" name="email" maxlength="20" placeholder="Email Address*"required>
+                </div>
+                <div class="dws-input">
+                    <input type="text" name="userid" maxlength="15" placeholder="Martian User ID*"required>
+                </div>
+                <div class="dws-input2">
+                    <input type="password" class = "password" name="password" maxlength="20" placeholder="Password*" required>
+                <div class="dws-input2">
+                    <input type="password" class = "password" name="password" maxlength="20" placeholder="Confirm Password*"required><br />
+                </div>
+                    <div class="error"></div>
+                    <label>
+                        <input type="checkbox" class="showPassword">
+                            <span class="link1">
+                                Show Password
+                            </span>
+                    </label>
+                </div> 
+                <div class="buttons">
+                    <div class="btn">
+                      <input class="button" type="submit" name="submit" id = "sumbit" value="Sign In"><br />
+                    </div>
+                        <input class="button" type="submit" name="submit" value="Sign Up"><br />
+                </div>
+                <div class="forgot">
+                    <a href="index.html">
+                        Have an account?
+                    </a>
+                </div>
+                <div class="register">
+                    <a href="index.html">
+                       Sign In
+                      </a>
+                </div>
+            </div> 
+        </form>
+    <div class="form-with-img"></div>
+</div>
+    
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
