@@ -15,9 +15,7 @@ $(function() {
             $('.lists-item').find('a:contains(Contact)').addClass('active');
         }
     }
-
-
-    $('a[href*="#"]').on('click', function (event) {
+      $('a[href*="#"]').on('click', function (event) {
         event.preventDefault();
        
         $('html, body').animate({
@@ -64,5 +62,5 @@ $(function() {
       $('.hamb').show();
       $('.overlay').fadeOut();
       });
-      });
+    });
 });

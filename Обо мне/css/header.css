@@ -109,3 +109,62 @@ header {
     color: #fff;
   
 }
+.header {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: transparent;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.active {
+  background-color: transparent;
+  color: white;
+}
+
+.header .icon {
+  display: none;
+}
+
+
+
+.social-links {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.social-links a {
+  float: left;
+  display: block;
+  color: transparent;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.social-links a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.active {
+  background-color: transparent;
+  color: white;
+}
+
+.social-links .icon {
+  display: none;
+}

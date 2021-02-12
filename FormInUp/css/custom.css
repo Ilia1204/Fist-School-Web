@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
 body {
     background: url("../img/martian3.jpg") no-repeat;
     background-size: 100%;
+    font-family: Lora;
 }  
 a {
     color:#fff;
@@ -32,6 +35,7 @@ a:hover{
     margin: 250px auto 0 auto;
     text-align: center;
     display: flex;
+    /*animation: container 3s 0s infinite linear ;*/
 }
 input[type="text"],input[type="password"],input[type="email"]{
     width: 300px;
@@ -66,9 +70,10 @@ input::-webkit-input-placeholder {
     cursor: pointer;
     border-radius: 2px;
     letter-spacing: 3px;
-    font-family: clarendon;
-    src: url(fonts/clarendon.ttf); 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+    font-family: Clarendon; /* Имя шрифта */
+    src: url(/fonts/clarendon.ttf); /* Путь к файлу со шрифтом */
 }
 .button:hover {
     transition: all 0.5s;
@@ -142,3 +147,112 @@ label {
     width: 16px;
     transform: scale(1);
 }
+header {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.menu li.active, .menu li:hover {
+    color: #fd5a54;
+}
+.menu li {
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    
+}
+.menu li:after {
+    opacity: 0;
+    transform: translateY(2px);
+    transition: .3s ease all;
+}
+.menu li:hover:after {
+    opacity: 1;
+    transform: translateY(-3px);
+}   
+.menu li:hover {
+    padding: 8px;
+    color: #fd5a54;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.menu .menu-lists {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.menu .menu-lists .lists-item{
+    display: flex;
+    position: relative;
+}
+
+.menu .menu-lists .lists-item a.active::after {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+.menu-lists span, .hamb{
+    display: none;
+}
+
+.menu .lists-item a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 1500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px 0;
+    margin: 0 23px;
+    text-decoration: none;
+}
+
+.menu .lists-item a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: #fd5a54;
+    height: 2px;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: .3s ease all;
+}
+
+.menu .lists-item a:hover:after {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+.header-form-sign-in {
+    color: #fff;
+}
+
+@keyframes container {
+    from {
+     transform: RotateX(0)
+    }
+  
+    to {
+        transform: RotateX(360deg);
+       }
+  }         
+ 

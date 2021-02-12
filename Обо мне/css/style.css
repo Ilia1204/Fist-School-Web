@@ -313,6 +313,9 @@
     border-radius: 5px;
     height: 370px;
 }
+#contact {
+    background-color: #000;
+}
 
 .section-title {
     display: flex;
